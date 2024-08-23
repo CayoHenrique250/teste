@@ -1,0 +1,293 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.navegacao ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #8dc965;
+  margin-top: 5%;
+}
+
+.dark .navegacao ul {
+  background-color: #597944;
+}
+
+.navegacao li {
+  float: left;
+  border-right: 1px solid #65b92c;
+}
+
+.dark .navegacao li {
+  border-right: 1px solid #89a151;
+}
+
+.navegacao li:last-child {
+  border-right: none;
+}
+
+.navegacao li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.navegacao li a:hover:not(.active) {
+  background-color: #398517;
+}
+
+.dark .navegacao li a:hover:not(.active) {
+  background-color: #8aaf46;
+}
+
+hr {
+  text-align: center;
+  width: 30%;
+  height: 2px;
+  background-color: #8ba77b;
+  opacity: 50%;
+  border: none;
+}
+
+.hr-top {
+  margin-top: 4%;
+}
+
+.hr-bottom {
+  margin-bottom: 4%;
+}
+
+.titulo {
+  text-align: center;
+  color: #528016;
+  font-size: 200%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.dark .td {
+  color: #23420e;
+}
+
+.dark .titulo {
+  color: #8c9c5e;
+}
+
+.texto {
+  text-indent: 4%;
+  font-size: 130%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify;
+  padding-right: 12%;
+  padding-left: 12%;
+}
+
+.dark .texto {
+  color: #ffffff;
+}
+
+.dark .td {
+  color: #23420e;
+}
+
+.img-text {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  margin-top: 5%;
+  margin-bottom: 7%;
+}
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  margin-right: 0%;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #4ec23fcc;
+}
+
+.dot {
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  margin: 0 2px;
+  background-color: #75af64;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+.dot:hover {
+  background-color: #9fcead;
+}
+
+.dots {
+  margin-top: -5%;
+  position: relative;
+  text-align: center;
+}
+
+.active,
+.dot:hover.active {
+  background-color: #c6f1d3;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.img_tam {
+  margin-top: -1.2%;
+  width: 100%;
+  height: 500px;
+}
+
+/* Versão mobile */
+@media (max-width: 480px){
+  
+  .navegacao ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 5%;
+  }
+  
+  .navegacao li a {
+    padding: 14px 16px;
+  }
+  
+  hr {
+    width: 50%;
+    height: 1.5px;
+    opacity: 50%;
+  }
+  
+  .hr-top {
+    margin-top: 8%;
+  }
+  
+  .hr-bottom {
+    margin-bottom: 4%;
+  }
+  
+  .titulo {
+    font-size: 150%;
+  }
+ 
+  .texto {
+    text-indent: 10%;
+    font-size: 100%;
+    padding-right: 13%;
+    padding-left: 12%;
+  }
+  
+  .img-text {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 7%;
+  }
+  
+  .slideshow-container {
+    max-width: 100%;
+  }
+  
+  .prev {
+    top: 50%;
+    margin-top: -22px;
+    padding: 16px;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+  }
+  
+  .next {
+    top: 50%;
+    margin-top: -22px;
+    margin-right: 0%;
+    padding: 16px;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    border-radius: 50%;
+  }
+
+  .dots {
+    margin-top: -12%;
+    margin-bottom: 10%;
+  }
+
+  
+  .img_tam {
+    margin-top: -5%;
+    width: 100%;
+    height: 200px;
+  }
+  
+}

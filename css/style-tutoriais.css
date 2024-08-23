@@ -1,0 +1,106 @@
+.container-tutoriais {
+    margin-top: -0.6%;
+    background-color: #f4ffe3;
+    height: 200px;
+}
+
+.dark .container-tutoriais {
+    background-color: #58834b;
+}
+
+.container-tutoriais h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(#6a9e26, #9dd346, #354b19);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 6%;
+    margin-left: 8%;
+    font-size: 250%;
+}
+
+.dark .container-tutoriais h1 {
+    background-image: linear-gradient(#9ddf94, #5fdf69, #ffffff);
+
+}
+
+.logo-tutoriais {
+    display: block;
+    margin-left: 70%;
+    width: 15%;
+    margin-top: -9%;
+}
+
+.container-tutoriais:hover {
+    background-color: #d5f7b6;
+    transition: all 0.5s linear;
+}
+
+.dark .container-tutoriais:hover {
+    background-color: #5e810d;
+}
+
+.container-tutoriais:hover+.logo-tutoriais{
+    scale: 1.2;
+    transition: all 0.2s linear;
+}
+
+.logo-tutoriais:hover {
+    scale: 1.2;
+    transition: all 0.2s linear;
+}
+
+.gallery {
+    margin: 5px;
+    border: 1px solid #b2d3aa;
+    float: left;
+    margin-left: 33px;
+    margin-top: 6%;
+    width: 30%;
+    margin-bottom: auto;
+}
+
+.gallery:hover {
+    border: 1px solid #6dac5a;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+.gallery a {
+    text-decoration: none;
+}
+
+.dark .gallery {
+    background-color: #9dc075;
+    border: 1px solid #bff8bd;
+}
+
+.dark .gallery:hover {
+    background-color: #abdf88;
+    border: 1px solid #11df0a;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+    color: #81c02e;
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 140%;
+    font-weight: bold
+}
+
+.dark .desc{
+    color: #355739;
+}
+
+.back-tut {
+    margin-top: 80%;
+    opacity: 0;
+}
+
+.tut-img{
+    width: 100%;
+    height: 350px;
+}
